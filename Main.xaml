@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="612,667.3333333333334" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="612,1076" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -75,19 +75,19 @@
       <AssemblyReference>System.Private.Uri</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="546,602.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="546,1011.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Home" sap:VirtualizedContainerService.HintSize="484,492" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="6b3c21a0-1cf4-4b12-9116-ba284b50c8a7" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Home" sap:VirtualizedContainerService.HintSize="484,900.6666666666666" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="6b3c21a0-1cf4-4b12-9116-ba284b50c8a7" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,272.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,681.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -104,6 +104,18 @@
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'On Hand Availability'" sap:VirtualizedContainerService.HintSize="388,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6b3c21a0-1cf4-4b12-9116-ba284b50c8a7" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://erpprod.safaricom.net/OA_HTML/OA.jsp?OAFunc=OAHOMEPAGE#dummyAnchor" DesignTimeRectangle="83, 829, 217, 25" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'On Hand Availability'" FullSelectorArgument="&lt;webctrl id='respList' tableRow='1' tag='TABLE' /&gt;&lt;webctrl aaname='On Hand Availability' class='textdivresp' tableRow='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='respList' tag='TABLE' /&gt;&lt;webctrl aaname='On Hand Availability' class='textdivresp' type='' tag='DIV' check:innerText='On Hand Availability' /&gt;" Guid="b0d69078-71a9-4dad-bb01-ec9f8ec45c15" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAN0AAAAdCAYAAAAuLGmuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAANkSURBVHhe7ZhLahtBEIZzCB/PAZGTmISQLBJjyD5aJiAtA8LJMsQ23mrlEwRj36HTVf36u6dH85DUyOT/oGFGU11dM6pvWuiVIYQ0hdIR0hhKR0hjKB0hjaF0hDSG0hHSGEpHSGMoHSGNoXSENIbSEdIYSkdIY2ZL9/bbH/P684/OePf9xkcQQmrMlk4Ee//rb2fI54SQfigdIY0ZlO73zZ0/yhG5Flebznjz5ade2zVG/QR9ujWL86/mLIzlg78wjftlZa7m3ph7f7o/D+bS1ni59acdns36Yv49JFweXWe7MWcXt+bRXegB4ktgvjyjxfWzPYL4gz8jEtgpnQj34dOVP8sReWo73Zghc3ciDXG+Musnf25ReQabrMtJSCf3s9zYmAOuua90QJIOoHRHo1e6IFx76foaBT/3x7aRh3bCUdKp5D4PyqONbWWxa7lr+CJwNbi1Raj+5pYa5FrW3J2mFnFDfsgtI8oFzyCTbiD+WtZy1+L6MD/VFfK7l4jLZ2ssBZfa8ZxMoiodCtdcuh1v2CSQb7Lwxas0+c4YGJROj9Pcx+tVkTfI5Nf0uTRvNa5EGhjWis0aGlxPOhKkmnEXhTkT4lUcOcV7Lebv/nmJLwT3jDo7IxlNR7pSuFOSToUA6dIXnzcFog2pb+xy1NfAZnQypbhy/ShM5xyQHFEIiUt1oiyp8UswNxxjnRndeMwb15kknYtJOevPmowjk64m3ClL55pAGJAuNr2n0lCZkCgdNHZaH3cToawn0cltR5Qg5i/q1/ryOanh/THWNibeEwWbKJ3Gy73L5/BMyHSidH3CyahxNOl6Gxg/L2P2kE6aqWyu0FR4bJm80+k6RV1ZM/u6t9jILlcUs+++Y23D8eW1WdJprRuzts8g5SNzUOl2CSejxvGks6gIebOqPEVjpiY/lHQu77B0/hjj4u6SyGIiUmuK1frseVUMIcsN9x1rG46PNeBLAO5tnHSh1vpzJuOp/pEyhqNKJ+iX7hpSRyYONIeyh3ShMXUdm0N2HRQSpEHpsnk2Zm3XSfUI7nptV9CaQl6VpKjdixPuuyoF1jYUD/9exhphfjW/fzn0/gogs5kt3cfVncozZ8hc8vJIcpJ9mC0d+Z/wuzp3uYNA6QhpDKUjpDGUjpDGUDpCmmLMP2USsb5sA32VAAAAAElFTkSuQmCC" InformativeScreenshot="e418556ed125256aae46f01d48f10761.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="95, 837, 16, 16" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl id='respList' tableRow='1' tag='TABLE' /&gt;&lt;webctrl aaname='On Hand Availability' tableRow='1' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl id='respList' tag='TABLE' /&gt;&lt;webctrl aaname='On Hand Availability' type='' tag='IMG' class='image' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAABiSURBVDhPY/hPZTCEDGxafvR/bO8WDNy84hhUBXEAbiBIc+vu5xgYJE4KoK2BCRO2Y+CkybvAcvgwcrAQdCExGKQXBkYNxK6BEB41EAI6Vp8AS5CDQXphAG4gtcCIM/D/fwB6aoUZFzY4nQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,169.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" Version="V3" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
